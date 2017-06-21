@@ -1,0 +1,1 @@
+# nhqminer_cpu
