@@ -11,7 +11,7 @@ RUN apt-get update && \
 	cmake . && \
 	make -j $(nproc) && \
 	cp nheqminer_cpu /bin && \
-	nhqminer_cpu -h
+	./nheqminer_cpu -h
 
-ENTRYPOINT ["nhqminer_cpu"]
+ENTRYPOINT ["nheqminer_cpu"]
 	
