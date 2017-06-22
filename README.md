@@ -42,3 +42,7 @@ Example to mine on your CPU with your own BTC address and worker1 on EU server, 
 Example to mine on your CPU as well on your CUDA GPUs with your own BTC address and worker1 on EU server, using 6 CPU threads and 2 CUDA GPUs:
 
         docker run --rm --name miner a2ncer/nheqminer_cpu:latest -l equihash.eu.nicehash.com:3357 -u YOUR_BTC_ADDRESS_HERE.worker1 -t 6 -cd 0 1
+
+Ready docker image https://hub.docker.com/r/a2ncer/nhqminer_cpu/
+
+Source of miner https://github.com/nicehash/nheqminer
