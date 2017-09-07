@@ -29,19 +29,19 @@ Example to run benchmark on your CPU:
 
         docker run --rm --name miner a2ncer/nheqminer_cpu:latest -b
         
-Example to mine on your CPU with your own BTC address and worker1 on NiceHash USA server:
+Example to mine on your CPU with your own wallet address and worker1 on NiceHash USA server:
 
-        docker run --rm --name miner a2ncer/nheqminer_cpu:latest -l equihash.usa.nicehash.com:3357 -u YOUR_BTC_ADDRESS_HERE.worker1
+        docker run --rm --name miner a2ncer/nheqminer_cpu:latest -l equihash.usa.nicehash.com:3357 -u YOUR_WALLET_ADDRESS_HERE.worker1
 
-Example to mine on your CPU with your own BTC address and worker1 on EU server, using 6 threads:
+Example to mine on your CPU with your own wallet address and worker1 on EU server, using 6 threads:
 
-        docker run --rm --name miner a2ncer/nheqminer_cpu:latest -l equihash.eu.nicehash.com:3357 -u YOUR_BTC_ADDRESS_HERE.worker1 -t 6
+        docker run --rm --name miner a2ncer/nheqminer_cpu:latest -l equihash.eu.nicehash.com:3357 -u YOUR_WALLET_ADDRESS_HERE.worker1 -t 6
 
 <i>Note: if you have a 4-core CPU with hyper threading enabled (total 8 threads) it is best to run with only 6 threads (experimental benchmarks shows that best results are achieved with 75% threads utilized)</i>
 
-Example to mine on your CPU as well on your CUDA GPUs with your own BTC address and worker1 on EU server, using 6 CPU threads and 2 CUDA GPUs:
+Example to mine on your CPU as well on your CUDA GPUs with your own wallet address and worker1 on EU server, using 6 CPU threads and 2 CUDA GPUs:
 
-        docker run --rm --name miner a2ncer/nheqminer_cpu:latest -l equihash.eu.nicehash.com:3357 -u YOUR_BTC_ADDRESS_HERE.worker1 -t 6 -cd 0 1
+        docker run --rm --name miner a2ncer/nheqminer_cpu:latest -l equihash.eu.nicehash.com:3357 -u YOUR_WALLET_ADDRESS_HERE.worker1 -t 6 -cd 0 1
 
 Ready docker image https://hub.docker.com/r/a2ncer/nheqminer_cpu/
 
